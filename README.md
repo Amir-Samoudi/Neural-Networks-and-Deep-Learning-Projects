@@ -200,6 +200,35 @@ This assignment explores **deep generative models**, focusing on **Generative Ad
   - **Encoder:** Compresses images into a probabilistic latent space (*mean* & *log-variance*).  
   - **Decoder:** Reconstructs images from sampled latent vectors.  
   - **Losses:** Combination of **Reconstruction Loss** (BCE/MSE) and **KL Divergence Loss** ensures realism and smooth latent space.  
-  - Enables **novel image generation** for medical imaging applications.  
+  - Enables **novel image generation** for medical imaging applications.
+
+---
+
+## Homework e: Adversarial Attacks and Advanced Image Captioning
+This extra assignment covers advanced topics in model robustness, transfer learning, and attention-based image captioning.  
+
+### Part 1: Analyzing Neural Networks Under Adversarial Attacks  
+**Topic:** Adversarial Robustness & Transfer Learning  
+
+**Datasets:** CIFAR-100 & 102-Flowers  
+
+**Description:**  
+This project analyzes the performance and robustness of deep neural networks. It involves training a ResNet model from scratch on both clean and noisy versions of the CIFAR-100 dataset to study the impact of data quality. Subsequently, a pre-trained Vision Transformer (ViT) is fine-tuned on the 102-Flowers dataset to demonstrate the effectiveness of transfer learning. Finally, the robustness of all trained models is tested against FGSM (Fast Gradient Sign Method) and PGD (Projected Gradient Descent) adversarial attacks, followed by an attempt to improve their resilience using adversarial training.  
+
+---
+
+### Part 2: Generate Image Captions  
+**Topic:** Image Captioning with Attention  
+
+**Papers:**  
+- [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](https://arxiv.org/abs/1502.03044)  
+- [Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks](https://arxiv.org/abs/1506.03099)  
+
+**Dataset:** COCO Captions (Farsi version)  
+
+**Description:**  
+This project implements an image captioning model based on a CNN-RNN architecture with a visual attention mechanism. An EfficientNet serves as the encoder to extract spatial features from images. The decoder, an LSTM-based network, uses a soft attention mechanism to focus on relevant parts of the image while generating each word of the caption. The training process is further enhanced by implementing *Scheduled Sampling*, a technique that gradually shifts the decoder from using ground-truth words (teacher forcing) to using its own previously generated words as input, which helps mitigate discrepancies between training and inference.  
+
+  
 
 ---
