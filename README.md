@@ -8,7 +8,7 @@ The collection showcases practical implementations of various neural network arc
 ## Topics Covered
 - Multi-Layer Perceptrons (MLPs) & Autoencoders  
 - Convolutional Neural Networks (CNNs)  
-- Region-Based CNNs for Object Detection and Segmentation  
+- Region-Based CNNs for Object Detection  
 - Recurrent Neural Networks (RNNs)  
 - Transformers  
 - Deep Generative Models  
@@ -16,8 +16,10 @@ The collection showcases practical implementations of various neural network arc
 ---
 
 ## Projects
-- **Homework 1:** Multi-Layer Perceptrons and Autoencoders  
-- **Homework 2:** ....
+- [Homework 1: Multi-Layer Perceptrons and Autoencoders](#-homework-1-multi-layer-perceptrons-and-autoencoders)  
+- [Homework 2: Convolutional Neural Networks](#-homework-2-convolutional-neural-networks)  
+- Homework 3: (Coming Soon)  
+- ... and so on for all 7 projects.  
 
 ---
 
@@ -60,5 +62,30 @@ This assignment focuses on the fundamentals of fully connected networks. It cove
   The trained encoders were then frozen and used as feature extractors.  
   Finally, separate MLP classifiers were trained on these extracted features to perform digit classification.  
   This experiment assessed how the dimensionality of the autoencoder's latent space affects the quality of the features for a downstream classification task.  
+
+---
+
+## Homework 2: Convolutional Neural Networks
+
+This assignment explores the application of **Convolutional Neural Networks (CNNs)** for image classification tasks, including medical imaging and vehicle recognition.
+
+### Part 1: COVID-19 Disease Detection from X-Ray Images
+- **Task:** Image Classification  
+- **Paper:** [COVID-19 Disease Detection Based on X-Ray Image Classification](https://onlinelibrary.wiley.com/doi/10.1155/2021/6621607)  
+- **Description:**  
+  A custom CNN architecture was implemented to classify chest X-ray images into three categories: **COVID-19, Normal, and Pneumonia**.  
+  The project involved preprocessing a highly imbalanced dataset by **downsampling**, followed by **data augmentation** to create a balanced and robust training set.  
+  The model achieved high accuracy in detecting COVID-19 cases.  
+
+---
+
+### Part 2: A Hybrid VGG-16 and SVM Model for Vehicle Classification
+- **Task:** Image Classification (Hybrid Model)  
+- **Paper:** [A Hybrid Deep Learning VGG-16 Based SVM Model for Vehicle Type Classification](https://www.researchgate.net/publication/389011147_A_Hybrid_Deep_Learning_VGG-16_Based_SVM_Model_for_Vehicle_Type_Classification)  
+- **Description:**  
+  This project implements a **hybrid approach** for vehicle classification.  
+  The pre-trained **VGG-16** model is used as a feature extractor to generate feature vectors from vehicle images.  
+  These features are then fed into a **Support Vector Machine (SVM)** classifier.  
+  This method combines the feature representation strength of deep learning with the classification efficiency of traditional machine learning.  
 
 ---
