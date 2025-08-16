@@ -15,14 +15,15 @@ The collection showcases practical implementations of various neural network arc
 
 ---
 
-## Projects
-- [Homework 1: Multi-Layer Perceptrons and Autoencoders](#-homework-1-multi-layer-perceptrons-and-autoencoders)  
-- [Homework 2: Convolutional Neural Networks](#-homework-2-convolutional-neural-networks)  
-- [Homework 3: Region-Based CNNs](#-homework-3-region-based-cnns)  
-- [Homework 4: Recurrent Neural Networks](#-homework-4-recurrent-neural-networks) 
-- [Homework 5: Transformers and Vision Transformers](#-homework-5-transformers-and-vision-transformers)  
-- [Homework 6: Deep Generative Models](#-homework-6-deep-generative-models)    
 
+## Projects
+- [Homework 1: Multi-Layer Perceptrons and Autoencoders](#homework-1-multi-layer-perceptrons-and-autoencoders)  
+- [Homework 2: Convolutional Neural Networks](#homework-2-convolutional-neural-networks)  
+- [Homework 3: Region-Based CNNs](#homework-3-region-based-cnns)  
+- [Homework 4: Recurrent Neural Networks](#homework-4-recurrent-neural-networks)  
+- [Homework 5: Transformers and Vision Transformers](#homework-5-transformers-and-vision-transformers)  
+- [Homework 6: Deep Generative Models](#homework-6-deep-generative-models)  
+- [Homework e: Adversarial Attacks and Advanced Image Captioning](#homework-e-adversarial-attacks-and-advanced-image-captioning)  
 ---
 
 ## Homework 1: Multi-Layer Perceptrons and Autoencoders
