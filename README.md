@@ -154,8 +154,7 @@ This assignment focuses on the **Transformer architecture**, exploring its appli
 
 ### Part 1: Image Classification by ViT for Smart Agriculture
 - **Task:** Image Classification  
-- **Paper:** [ViT-SmartAgri: Vision Transformer and Smartphone-Based Plant Disease Detection for Smart Agriculture](https://www.sciencedirect.com/science/article/abs/pii/S0168169923000318)  
-- **Dataset:** [PlantVillage](https://www.kaggle.com/datasets/emmarex/plantdisease)  
+- **Paper:** [ViT-SmartAgri: Vision Transformer and Smartphone-Based Plant Disease Detection for Smart Agriculture](https://www.mdpi.com/2073-4395/14/2/327)   
 - **Description:**  
   Implements a **Vision Transformer (ViT)** to classify plant leaf diseases.  
   - Unlike CNNs, ViT treats an image as a sequence of patches and applies a **Transformer encoder** to model relationships.  
@@ -166,12 +165,12 @@ This assignment focuses on the **Transformer architecture**, exploring its appli
 
 ### Part 2: Robust Zero-Shot Classification with CLIP
 - **Task:** Zero-Shot Classification & Adversarial Robustness  
-- **Paper:** [Understanding Zero-shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2112.09301)  
+- **Paper:** [Understanding Zero-shot Adversarial Robustness for Large-Scale Models](https://openreview.net/forum?id=P4bXCawRi5J)  
 - **Dataset:** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)  
 - **Description:**  
   Investigates the robustness of **OpenAI’s CLIP** (Contrastive Language–Image Pre-training).  
   - **Zero-Shot Classification:** Evaluated CLIP on CIFAR-10 by comparing image embeddings with class text embeddings (e.g., *“a photo of a car”*).  
-  - **Adversarial Attacks:** Generated adversarial samples with a pre-trained ResNet and tested transferability to CLIP.  
+  - **Adversarial Attacks:** Generated adversarial samples using PGD and FGSM methods with a pre-trained ResNet (transfer attacks) and tested transferability to CLIP.  
   - **Adversarial Fine-Tuning:** Explored robustness improvements using **standard CE loss** and **TeCoA (Text-guided Contrastive Adversarial) loss**, with **LoRA** for parameter-efficient adaptation.  
 
 ---
@@ -183,7 +182,7 @@ This assignment explores **deep generative models**, focusing on **Generative Ad
 ### Part 1: Unsupervised Pixel-Level Domain Adaptation with GANs
 - **Task:** Unsupervised Domain Adaptation  
 - **Paper:** [Unsupervised Pixel-Level Domain Adaptation with Generative Adversarial Networks](https://arxiv.org/abs/1612.05424)  
-- **Datasets:** [MNIST](http://yann.lecun.com/exdb/mnist/) & [MNIST-M](https://github.com/erictzeng/pixelda)  
+- **Datasets:** MNIST & MNIST-M  
 - **Description:**  
   Addresses the **domain gap problem** by adapting a model trained on **grayscale MNIST** to work on **colored MNIST-M** without target labels.  
   - A **GAN generator** learns to translate source images into target style.  
@@ -195,8 +194,8 @@ This assignment explores **deep generative models**, focusing on **Generative Ad
 
 ### Part 2: Generating Endoscopic Images with EndoVAE
 - **Task:** Image Generation & Reconstruction  
-- **Paper:** [EndoVAE: Generating Endoscopic Images with a Variational Autoencoder](https://arxiv.org/abs/2203.09137)  
-- **Dataset:** [Kvasir](https://datasets.simula.no/kvasir/)  
+- **Paper:** [EndoVAE: Generating Endoscopic Images with a Variational Autoencoder](https://www.researchgate.net/publication/361927238_EndoVAE_Generating_Endoscopic_Images_with_a_Variational_Autoencoder)  
+- **Dataset:** [Kvasir](https://www.kaggle.com/datasets/meetnagadia/kvasir-dataset)  
 - **Description:**  
   Implements an **EndoVAE** to generate and reconstruct endoscopic images.  
   - **Encoder:** Compresses images into a probabilistic latent space (*mean* & *log-variance*).  
