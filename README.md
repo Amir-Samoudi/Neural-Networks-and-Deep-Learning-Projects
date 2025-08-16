@@ -20,7 +20,8 @@ The collection showcases practical implementations of various neural network arc
 - [Homework 2: Convolutional Neural Networks](#-homework-2-convolutional-neural-networks)  
 - [Homework 3: Region-Based CNNs](#-homework-3-region-based-cnns)  
 - [Homework 4: Recurrent Neural Networks](#-homework-4-recurrent-neural-networks) 
-- ... and so on for all 7 projects.  
+- [Homework 5: Transformers and Vision Transformers](#-homework-5-transformers-and-vision-transformers)  
+- [Homework 6: Deep Generative Models](#-homework-6-deep-generative-models)    
 
 ---
 
@@ -147,3 +148,60 @@ This assignment explores **Recurrent Neural Networks (RNNs)**, including **LSTM*
 
 ---
 
+## Homework 5: Transformers and Vision Transformers
+
+This assignment focuses on the **Transformer architecture**, exploring its application in computer vision through **Vision Transformers (ViT)** for direct image classification and investigating the **adversarial robustness** of large-scale multi-modal models like **CLIP**.
+
+### Part 1: Image Classification by ViT for Smart Agriculture
+- **Task:** Image Classification  
+- **Paper:** [ViT-SmartAgri: Vision Transformer and Smartphone-Based Plant Disease Detection for Smart Agriculture](https://www.sciencedirect.com/science/article/abs/pii/S0168169923000318)  
+- **Dataset:** [PlantVillage](https://www.kaggle.com/datasets/emmarex/plantdisease)  
+- **Description:**  
+  Implements a **Vision Transformer (ViT)** to classify plant leaf diseases.  
+  - Unlike CNNs, ViT treats an image as a sequence of patches and applies a **Transformer encoder** to model relationships.  
+  - Trained on the **PlantVillage dataset** to identify multiple plant diseases.  
+  - Demonstrates the power of **attention-based architectures** in agriculture applications.  
+
+---
+
+### Part 2: Robust Zero-Shot Classification with CLIP
+- **Task:** Zero-Shot Classification & Adversarial Robustness  
+- **Paper:** [Understanding Zero-shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2112.09301)  
+- **Dataset:** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)  
+- **Description:**  
+  Investigates the robustness of **OpenAI’s CLIP** (Contrastive Language–Image Pre-training).  
+  - **Zero-Shot Classification:** Evaluated CLIP on CIFAR-10 by comparing image embeddings with class text embeddings (e.g., *“a photo of a car”*).  
+  - **Adversarial Attacks:** Generated adversarial samples with a pre-trained ResNet and tested transferability to CLIP.  
+  - **Adversarial Fine-Tuning:** Explored robustness improvements using **standard CE loss** and **TeCoA (Text-guided Contrastive Adversarial) loss**, with **LoRA** for parameter-efficient adaptation.  
+
+---
+
+## Homework 6: Deep Generative Models
+
+This assignment explores **deep generative models**, focusing on **Generative Adversarial Networks (GANs)** for domain adaptation and **Variational Autoencoders (VAEs)** for medical image generation and reconstruction.
+
+### Part 1: Unsupervised Pixel-Level Domain Adaptation with GANs
+- **Task:** Unsupervised Domain Adaptation  
+- **Paper:** [Unsupervised Pixel-Level Domain Adaptation with Generative Adversarial Networks](https://arxiv.org/abs/1612.05424)  
+- **Datasets:** [MNIST](http://yann.lecun.com/exdb/mnist/) & [MNIST-M](https://github.com/erictzeng/pixelda)  
+- **Description:**  
+  Addresses the **domain gap problem** by adapting a model trained on **grayscale MNIST** to work on **colored MNIST-M** without target labels.  
+  - A **GAN generator** learns to translate source images into target style.  
+  - A **discriminator** enforces realism in generated samples.  
+  - A **task classifier** ensures digit identity is preserved.  
+  - Effectively bridges the visual gap between the domains.  
+
+---
+
+### Part 2: Generating Endoscopic Images with EndoVAE
+- **Task:** Image Generation & Reconstruction  
+- **Paper:** [EndoVAE: Generating Endoscopic Images with a Variational Autoencoder](https://arxiv.org/abs/2203.09137)  
+- **Dataset:** [Kvasir](https://datasets.simula.no/kvasir/)  
+- **Description:**  
+  Implements an **EndoVAE** to generate and reconstruct endoscopic images.  
+  - **Encoder:** Compresses images into a probabilistic latent space (*mean* & *log-variance*).  
+  - **Decoder:** Reconstructs images from sampled latent vectors.  
+  - **Losses:** Combination of **Reconstruction Loss** (BCE/MSE) and **KL Divergence Loss** ensures realism and smooth latent space.  
+  - Enables **novel image generation** for medical imaging applications.  
+
+---
