@@ -18,7 +18,8 @@ The collection showcases practical implementations of various neural network arc
 ## Projects
 - [Homework 1: Multi-Layer Perceptrons and Autoencoders](#-homework-1-multi-layer-perceptrons-and-autoencoders)  
 - [Homework 2: Convolutional Neural Networks](#-homework-2-convolutional-neural-networks)  
-- Homework 3: (Coming Soon)  
+- [Homework 3: Region-Based CNNs](#-homework-3-region-based-cnns)  
+- [Homework 4: Recurrent Neural Networks](#-homework-4-recurrent-neural-networks) 
 - ... and so on for all 7 projects.  
 
 ---
@@ -89,3 +90,60 @@ This assignment explores the application of **Convolutional Neural Networks (CNN
   This method combines the feature representation strength of deep learning with the classification efficiency of traditional machine learning.  
 
 ---
+
+## Homework 3: Region-Based CNNs
+
+This assignment delves into advanced computer vision tasks using **region-based CNNs**, focusing on **real-time semantic segmentation** and **object detection with oriented bounding boxes**.
+
+### Part 1: Segmentation of Urban Scenes using Fast-SCNN
+- **Task:** Semantic Segmentation  
+- **Paper:** [Fast-SCNN: Fast Semantic Segmentation Network](https://arxiv.org/abs/2106.03146) 
+- **Dataset:** CamVid 
+- **Description:**  
+  This project implements the **Fast-SCNN** architecture, designed for **high-speed, low-memory** semantic segmentation of high-resolution images.  
+  - The model uses a **two-branch design**: a high-level feature extraction branch and a spatial detail branch.  
+  - These branches are merged to produce the final segmentation map.  
+  - It was trained on the **CamVid dataset** to classify pixels into categories like *road, car, pedestrian,* etc.  
+
+---
+
+### Part 2: Oriented R-CNN for Object Detection
+- **Task:** Object Detection with Oriented Bounding Boxes  
+- **Paper:** [Oriented R-CNN for Object Detection](https://arxiv.org/abs/2108.05699)  
+- **Dataset:** [HRSC2016 (High-Resolution Ship Collection)](https://www.kaggle.com/datasets/guofeng/hrsc2016)  
+- **Description:**  
+  An implementation of **Oriented R-CNN** to detect ships in high-resolution satellite imagery.  
+  - Unlike standard object detectors, this model predicts **oriented bounding boxes**, which are better suited for long, thin objects with arbitrary orientations.  
+  - The architecture uses a **ResNet-50-FPN backbone** and a specialized **Region Proposal Network (oriented RPN)**.  
+  - Proposals are refined using a **rotated RoI Align** layer for final detection.  
+
+---
+
+## Homework 4: Recurrent Neural Networks
+
+This assignment explores **Recurrent Neural Networks (RNNs)**, including **LSTM** and **GRU** architectures, for sequence modeling tasks such as image captioning and time-series prediction.
+
+### Part 1: Image Captioning with ResNet50 and Hybrid LSTM-GRU
+- **Task:** Image Captioning  
+- **Paper:** [Image captioning deep learning model using ResNet50 encoder and hybrid LSTM–GRU decoder optimized with beam search](https://www.tandfonline.com/doi/pdf/10.1080/00051144.2025.2485695)  
+- **Dataset:** [Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k)  
+- **Description:**  
+  This project implements an **encoder-decoder model** to generate captions for images.  
+  - A pre-trained **ResNet-50** acts as the encoder to extract features.  
+  - A hybrid **LSTM-GRU decoder** generates textual captions.  
+  - Optimized with **beam search** to produce more coherent and contextually relevant sentences.  
+
+---
+
+### Part 2: Context-aware LSTM for Clinical Event Time-series Prediction
+- **Task:** Time-series Prediction  
+- **Paper:** [Recent Context-aware LSTM for Clinical Event Time-series Prediction](https://people.cs.pitt.edu/%7Emilos/research/2019/Lee_Hauskrecht_AIME_2019.pdf)  
+- **Dataset:** [PhysioNet Sepsis Prediction Challenge 2019](https://physionet.org/content/challenge-2019/1.0.0/)  
+- **Description:**  
+  This project focuses on **predicting future clinical events** from patient time-series data.  
+  - Implements **LSTM, Bi-LSTM, GRU, and Bi-GRU** models.  
+  - Trained to forecast **20 physiological variables** in the next time step.  
+  - Aimed at early detection and prevention of **sepsis** using sequential patient data.  
+
+---
+
