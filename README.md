@@ -139,7 +139,6 @@ This assignment explores **Recurrent Neural Networks (RNNs)**, including **LSTM*
 ### Part 2: Context-aware LSTM for Clinical Event Time-series Prediction
 - **Task:** Time-series Prediction  
 - **Paper:** [Recent Context-aware LSTM for Clinical Event Time-series Prediction](https://people.cs.pitt.edu/%7Emilos/research/2019/Lee_Hauskrecht_AIME_2019.pdf)  
-- **Dataset:** [PhysioNet Sepsis Prediction Challenge 2019](https://physionet.org/content/challenge-2019/1.0.0/)  
 - **Description:**  
   This project focuses on **predicting future clinical events** from patient time-series data.  
   - Implements **LSTM, Bi-LSTM, GRU, and Bi-GRU** models.  
